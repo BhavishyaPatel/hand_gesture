@@ -2,5 +2,24 @@ __pycache__/
 *.pyc
 *.pyo
 *.pyd
-.env
+*.log
+
+# Virtual env
+env/
+venv/
+.venv/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# VSCode
 .vscode/
+
+# Tkinter temporary files
+*.tcl
+
+# PyInstaller builds (in case you package into EXE later)
+dist/
+build/
+*.spec

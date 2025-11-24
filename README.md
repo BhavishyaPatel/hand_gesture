@@ -1,50 +1,60 @@
-# Hand Gesture Control System (Python + MediaPipe)
+# Hand Gesture Control System (Webcam-Based)
 
-A complete AI-based gesture control system that allows you to:
-- Control mouse cursor using index finger
-- Click by pinching thumb + index finger
-- Control volume (up/down/mute) using finger pinches
-- Adjust brightness using 4-finger gesture + hand movement
-- Scroll using fist + up/down motion
+A complete gesture-controlled interface for Windows, using Python, OpenCV, MediaPipe, and Tkinter.
 
-## 🔥 Features
+This system allows you to control basic functions in laptop **without touching the mouse or keyboard**, using only your hand.
+
+## ✋ Features
+
 ### 🖱 Cursor Control
-- Move mouse with index finger
-- Smooth interpolation for natural movement
+- Move cursor with index finger
+- Smooth, stabilized pointer movement
 
 ### 👆 Click Gesture
-- Thumb + Index pinch = Left click
+- Pinch (thumb + index) → Left Click
 
 ### 🔊 Volume Control
-- Thumb + Middle pinch = Volume Up  
-- Thumb + Ring pinch = Volume Down  
-- Thumb + Little pinch = Mute  
+- Thumb + Middle finger pinch → Volume Up  
+- Thumb + Ring finger pinch → Volume Down  
+- Thumb + Little finger pinch → Mute  
 
 ### 🌞 Brightness Control
-- Show 4 fingers + thumb folded = Brightness Mode  
-- Move hand up/down to increase/decrease brightness
+- Show 4 fingers → Brightness Mode  
+- Move hand up/down → Adjust brightness  
+- Cursor movement disabled during brightness mode
 
 ### 📜 Scroll Control
-- Make a fist  
-- Move hand up/down to scroll
+- Make a fist → Scroll Mode  
+- Move hand up/down → Scroll  
+- Cursor movement disabled during scroll mode
 
-## 🚀 Installation
-
-### Clone the repo:
-https://github.com/BhavishyaPatel/hand_gesture.git
-
-### Install dependencies:
-pip install -r requirements.txt
-
-Run the project:
+### 🔒 Laptop Lock (Peace Sign Gesture)
+- Show ✌️ sign → Starts a 3-second countdown  
+- A popup window appears:  
+  **“Laptop locking in 3 seconds. Change gesture to cancel.”**  
+- If gesture stays → Auto-locks laptop  
+- If gesture changes → Lock canceled
 
 ## 🛠 Technologies Used
 - Python
 - OpenCV
 - MediaPipe Hands
+- NumPy
 - PyAutoGUI
-- screen_brightness_control
-- Math & Numpy
+- Tkinter (Popup UI)
+- Screen Brightness Control
 
-## ✨ Author
-Bhavishya K
+## 📦 Installation
+
+
+
+
+## ▶️ Run the Program
+
+
+
+
+## ⚠️ Notes
+- Works on Windows (due to LockWorkStation command)
+- Laptop must allow brightness control
+- Webcam required
